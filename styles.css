@@ -40,7 +40,7 @@ body {
 }
 
 .page-about {
-  background: url("images/logo.jpg") center/cover no-repeat fixed;
+  background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("images/logo.jpg") center/cover no-repeat fixed;
 }
 
 a {
@@ -218,7 +218,7 @@ img {
   content: "";
   position: absolute;
   inset: 0;
-  background: url("images/2.jpg")
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("images/2.jpg")
     center/cover no-repeat;
   opacity: 1;
   z-index: -1;
