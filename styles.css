@@ -39,6 +39,10 @@ body {
   min-height: 100vh;
 }
 
+.page-about {
+  background: url("images/logo.jpg") center/cover no-repeat fixed;
+}
+
 a {
   color: inherit;
   text-decoration: none;
