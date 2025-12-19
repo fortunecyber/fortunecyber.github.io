@@ -14,13 +14,17 @@
   </head>
   <body>
     <header class="nav">
-      <div class="nav__logo">
-        <div class="nav__logo-mark">VI</div>
-        <div class="nav__logo-text">
-          <span class="nav__logo-title">Visionary Instincts</span>
-          <span class="nav__logo-subtitle">Strategic Marketing Studio</span>
+      <a href="index.html" class="nav__logo-link" aria-label="Visionary Instincts home">
+        <div class="nav__logo">
+          <div class="nav__logo-mark">
+            <img src="images/logo.jpg" alt="Visionary Instincts Logo" />
+          </div>
+          <div class="nav__logo-text">
+            <span class="nav__logo-title">Visionary Instincts</span>
+            <span class="nav__logo-subtitle">Strategic Marketing Studio</span>
+          </div>
         </div>
-      </div>
+      </a>
       <button
         class="nav__toggle"
         aria-label="Toggle navigation"
@@ -31,11 +35,11 @@
         <span></span>
       </button>
       <nav class="nav__links" aria-label="Main">
-        <a href="#home" class="nav__link">Home</a>
-        <a href="#about" class="nav__link">About</a>
-        <a href="#services" class="nav__link">Services</a>
-        <a href="#insights" class="nav__link">Insights</a>
-        <a href="#contact" class="nav__link nav__link--primary">Contact</a>
+        <a href="index.html" class="nav__link">Home</a>
+        <a href="about.html" class="nav__link">About</a>
+        <a href="services.html" class="nav__link">Services</a>
+        <a href="insights.html" class="nav__link">Insights</a>
+        <a href="contact.html" class="nav__link nav__link--primary">Contact</a>
       </nav>
     </header>
 
@@ -54,8 +58,8 @@
             creativity, and sharp strategy into measurable, sustainable growth.
           </p>
           <div class="hero__actions">
-            <a href="#contact" class="btn btn--primary">Book a Strategy Call</a>
-            <a href="#services" class="btn btn--ghost">Explore Services</a>
+            <a href="contact.html" class="btn btn--primary">Book a Strategy Call</a>
+            <a href="services.html" class="btn btn--ghost">Explore Services</a>
           </div>
           <div class="hero__stats">
             <div class="stat">
@@ -74,221 +78,117 @@
         </div>
       </section>
 
-      <!-- ABOUT -->
-      <section id="about" class="section section--light">
-        <div class="section__inner section__inner--two-column">
-          <div class="section__copy">
-            <p class="section__eyebrow">About Visionary Instincts</p>
-            <h2 class="section__title">
-              We blend sharp strategy, creativity, and data to position your
-              brand for the next decade.
-            </h2>
-            <p class="section__text">
-              Visionary Instincts is a boutique marketing and strategy partner
-              for businesses that refuse to blend in. We help founders and
-              leadership teams clarify their vision, define a bold market
-              position, and execute campaigns that actually move the needle.
-            </p>
-            <p class="section__text">
-              From brand positioning and go‑to‑market plans to performance
-              campaigns and marketing automation, our team brings senior‑level
-              expertise without the complexity of a traditional agency.
-            </p>
-            <ul class="section__list">
-              <li>Insight‑driven strategy rooted in real customer behaviour.</li>
-              <li>Premium creative that feels modern, intentional, and on‑brand.</li>
-              <li>Clear metrics and reporting so you always know what’s working.</li>
-            </ul>
-          </div>
-          <div class="section__panel">
-            <div class="about-card">
-              <h3>What makes us different</h3>
-              <p>
-                We sit at the intersection of strategy consulting and creative
-                marketing — giving you both the thinking and the execution
-                required to grow.
-              </p>
-              <div class="about-card__rows">
-                <div>
-                  <span class="about-card__label">Core Focus</span>
-                  <span class="about-card__value">B2B & Service Brands</span>
-                </div>
-                <div>
-                  <span class="about-card__label">Engagements</span>
-                  <span class="about-card__value">Projects & Retainers</span>
-                </div>
-                <div>
-                  <span class="about-card__label">Location</span>
-                  <span class="about-card__value">Global, remote‑first</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- SERVICES -->
-      <section id="services" class="section section--dark">
+      <!-- TEASERS: brief summaries linking to full pages -->
+      <section class="section section--teasers">
         <div class="section__inner">
-          <p class="section__eyebrow section__eyebrow--light">
-            Comprehensive Consulting Services
-          </p>
-          <h2 class="section__title section__title--light">
-            Tailored marketing strategies to meet your unique business goals.
+          <div class="teasers-grid">
+            <article class="teaser-card">
+              <h3 class="teaser__title"><a href="about.html">About Visionary Instincts</a></h3>
+              <p class="teaser__text">We partner with leaders to clarify market position, craft distinct brand narratives, and align teams around measurable growth plans. Our work blends strategy and execution for predictable outcomes.</p>
+              <a class="btn btn--ghost" href="about.html">Read more</a>
+            </article>
+
+            <article class="teaser-card">
+              <h3 class="teaser__title"><a href="services.html">Services & Capabilities</a></h3>
+              <p class="teaser__text">From go‑to‑market roadmaps to performance campaigns and creative systems, our services focus on measurable outcomes and scalable processes that drive acquisition and retention.</p>
+              <a class="btn btn--ghost" href="services.html">Read more</a>
+            </article>
+
+            <article class="teaser-card">
+              <h3 class="teaser__title"><a href="insights.html">Selected Results & Insights</a></h3>
+              <p class="teaser__text">Case-driven highlights showing how strategy and creative delivery have improved lead quality, reduced acquisition costs, and multiplied organic growth for clients.</p>
+              <a class="btn btn--ghost" href="insights.html">Read more</a>
+            </article>
+
+            <article class="teaser-card">
+              <h3 class="teaser__title"><a href="contact.html">Start a Conversation</a></h3>
+              <p class="teaser__text">Share a few details about your goals and budget — we’ll reply with a concise plan for next steps and an optional discovery session.</p>
+              <a class="btn btn--primary" href="contact.html">Get in touch</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- WHY CHOOSE US -->
+      <section class="section section--light">
+        <div class="section__inner">
+          <p class="section__eyebrow">Why Choose Visionary Instincts</p>
+          <h2 class="section__title">
+            Strategic marketing that drives real results.
           </h2>
-          <p class="section__text section__text--muted">
-            Whether you are refining your brand, launching a new product, or
-            scaling what already works, we design strategies that meet you
-            exactly where you are.
+          <p class="section__text">
+            We combine data-driven insights with creative execution to help your business stand out and grow. Our approach is built on proven strategies that deliver measurable outcomes.
           </p>
 
-          <div class="services-grid">
-            <article class="service-card">
-              <div class="service-card__tag">Strategy</div>
-              <h3>Business Strategy Development</h3>
-              <p>
-                Align your brand vision with shifting market dynamics. We
-                combine market research, competitor analysis, and customer
-                insights to design a roadmap that positions your business for
-                long‑term success.
-              </p>
-              <ul>
-                <li>Market & competitor analysis</li>
-                <li>Brand & positioning strategy</li>
-                <li>Go‑to‑market roadmaps</li>
-              </ul>
-            </article>
-
-            <article class="service-card">
-              <div class="service-card__tag">Growth</div>
-              <h3>Marketing Consultation & Campaigns</h3>
-              <p>
-                Discover the right levers for measurable growth. We audit your
-                current efforts, identify quick wins, and design integrated
-                campaigns that connect with the right audience.
-              </p>
-              <ul>
-                <li>Performance marketing playbooks</li>
-                <li>Content & social strategy</li>
-                <li>Funnel and conversion optimization</li>
-              </ul>
-            </article>
-
-            <article class="service-card">
-              <div class="service-card__tag">Brand</div>
-              <h3>Brand Experience & Messaging</h3>
-              <p>
-                Build a brand that feels consistent across every touchpoint — from
-                website to proposals and presentations.
-              </p>
-              <ul>
-                <li>Brand story and messaging frameworks</li>
-                <li>Visual direction & digital guidelines</li>
-                <li>Sales & pitch deck refinement</li>
-              </ul>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- INSIGHTS / HIGHLIGHTS -->
-      <section id="insights" class="section section--light">
-        <div class="section__inner section__inner--two-column">
-          <div class="section__copy">
-            <p class="section__eyebrow">Selected Results</p>
-            <h2 class="section__title">
-              Real outcomes from brands that trusted their instincts.
-            </h2>
-            <p class="section__text">
-              Our engagements are designed around focused sprints with clear,
-              measurable outcomes. Here are a few ways we have helped clients
-              win in competitive markets.
-            </p>
-          </div>
-          <div class="insights-grid">
-            <div class="insight">
-              <span class="insight__metric">+210%</span>
-              <p class="insight__detail">
-                Increase in qualified leads for a B2B service firm within
-                6 months.
-              </p>
+          <div class="features-grid">
+            <div class="feature">
+              <div class="feature__icon">
+                <img src="images/3.jpg" alt="Data-Driven Strategy" />
+              </div>
+              <h3>Data-Driven Strategy</h3>
+              <p>Every decision is backed by market research, customer insights, and performance analytics to ensure maximum impact.</p>
             </div>
-            <div class="insight">
-              <span class="insight__metric">3x</span>
-              <p class="insight__detail">
-                Growth in organic traffic after a full messaging and content
-                revamp.
-              </p>
+            <div class="feature">
+              <div class="feature__icon">
+                <img src="images/4.jpg" alt="Scalable Solutions" />
+              </div>
+              <h3>Scalable Solutions</h3>
+              <p>From startups to enterprises, our marketing frameworks grow with your business and adapt to changing market conditions.</p>
             </div>
-            <div class="insight">
-              <span class="insight__metric">40%</span>
-              <p class="insight__detail">
-                Reduction in cost‑per‑acquisition for a digital campaign
-                portfolio.
-              </p>
+            <div class="feature">
+              <div class="feature__icon">
+                <img src="images/5.jpg" alt="Innovative Creative" />
+              </div>
+              <h3>Innovative Creative</h3>
+              <p>We blend traditional marketing wisdom with cutting-edge tactics to create campaigns that resonate and convert.</p>
+            </div>
+            <div class="feature">
+              <div class="feature__icon">
+                <img src="images/6.jpg" alt="Measurable ROI" />
+              </div>
+              <h3>Measurable ROI</h3>
+              <p>Clear metrics, transparent reporting, and a focus on revenue-generating activities that justify every investment.</p>
+            </div>
+            <div class="feature">
+              <div class="feature__icon">
+                <img src="images/7.jpg" alt="Partnership Approach" />
+              </div>
+              <h3>Partnership Approach</h3>
+              <p>We work as an extension of your team, providing ongoing support and strategic guidance for long-term success.</p>
+            </div>
+            <div class="feature">
+              <div class="feature__icon">
+                <img src="images/8.jpg" alt="Fast Execution" />
+              </div>
+              <h3>Fast Execution</h3>
+              <p>Quick wins combined with sustainable growth strategies to deliver results when you need them most.</p>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- CONTACT -->
-      <section id="contact" class="section section--accent">
-        <div class="section__inner section__inner--two-column section__inner--center">
-          <div class="section__copy">
-            <p class="section__eyebrow section__eyebrow--light">
-              Let’s Talk
-            </p>
-            <h2 class="section__title section__title--light">
-              Ready to explore what’s possible for your brand?
-            </h2>
-            <p class="section__text section__text--muted">
-              Share a few details and we’ll respond with a short, no‑pressure
-              overview of how we can support your growth.
-            </p>
+      <!-- TESTIMONIALS -->
+      <section class="section section--dark">
+        <div class="section__inner">
+          <p class="section__eyebrow section__eyebrow--light">What Our Clients Say</p>
+          <h2 class="section__title section__title--light">
+            Trusted by businesses that demand results.
+          </h2>
+
+          <div class="testimonials-grid">
+            <blockquote class="testimonial">
+              <p>"Visionary Instincts transformed our marketing approach. Their strategic insights and creative execution helped us achieve 3x growth in just 6 months."</p>
+              <cite>- Sarah Johnson, CEO of TechFlow Solutions</cite>
+            </blockquote>
+            <blockquote class="testimonial">
+              <p>"The team's data-driven strategies and attention to detail made all the difference. Our ROI improved by 250% within the first quarter."</p>
+              <cite>- Michael Chen, Founder of InnovateLabs</cite>
+            </blockquote>
+            <blockquote class="testimonial">
+              <p>"Professional, reliable, and results-oriented. Visionary Instincts doesn't just talk strategy—they deliver measurable outcomes."</p>
+              <cite>- Emma Rodriguez, Marketing Director at GrowthCorp</cite>
+            </blockquote>
           </div>
-          <form class="contact-form">
-            <div class="contact-form__row">
-              <div class="field">
-                <label for="name">Full Name</label>
-                <input id="name" type="text" placeholder="Jane Doe" />
-              </div>
-              <div class="field">
-                <label for="company">Company</label>
-                <input id="company" type="text" placeholder="Your company" />
-              </div>
-            </div>
-            <div class="contact-form__row">
-              <div class="field">
-                <label for="email">Email</label>
-                <input id="email" type="email" placeholder="you@example.com" />
-              </div>
-              <div class="field">
-                <label for="budget">Estimated Budget</label>
-                <select id="budget">
-                  <option value="">Select</option>
-                  <option value="under-2k">Under $2,000</option>
-                  <option value="2-5k">$2,000 – $5,000</option>
-                  <option value="5-10k">$5,000 – $10,000</option>
-                  <option value="10k-plus">$10,000+</option>
-                </select>
-              </div>
-            </div>
-            <div class="field">
-              <label for="message">What are you looking to achieve?</label>
-              <textarea
-                id="message"
-                rows="4"
-                placeholder="Share a short overview of your goals or current challenges."
-              ></textarea>
-            </div>
-            <button type="submit" class="btn btn--primary btn--full">
-              Send Inquiry
-            </button>
-            <p class="contact-form__note">
-              By submitting this form you agree to be contacted about relevant
-              services. We respect your inbox.
-            </p>
-          </form>
         </div>
       </section>
     </main>
@@ -296,16 +196,40 @@
     <footer class="footer">
       <div class="footer__inner">
         <div class="footer__brand">
-          <div class="footer__logo-mark">VI</div>
+          <div class="footer__logo-mark">
+            <img src="images/logo.jpg" alt="Visionary Instincts Logo" />
+          </div>
           <div>
             <p class="footer__title">Visionary Instincts</p>
             <p class="footer__subtitle">Strategic Business & Marketing Insights</p>
           </div>
         </div>
+        <div class="footer__links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="insights.html">Insights</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer__social">
+          <a href="#" aria-label="LinkedIn">LinkedIn</a>
+          <a href="#" aria-label="Twitter">Twitter</a>
+          <a href="#" aria-label="Email">Email</a>
+        </div>
+        <div class="footer__contact">
+          <div class="footer__contact-item">
+            <img src="https://img.icons8.com/ios-filled/24/ffffff/phone.png" alt="Phone" />
+            <a href="tel:0786526416">0786526416</a>
+          </div>
+          <div class="footer__contact-item">
+            <img src="https://img.icons8.com/ios-filled/24/ffffff/email.png" alt="Email" />
+            <a href="mailto:shephardzandawa10@gmail.com">shephardzandawa10@gmail.com</a>
+          </div>
+        </div>
         <div class="footer__meta">
           <span>&copy; <span id="year"></span> Visionary Instincts. All rights reserved.</span>
           <span class="footer__dot">&middot;</span>
-          <a href="#home">Back to top</a>
+          <a href="index.html">Back to top</a>
         </div>
       </div>
     </footer>
