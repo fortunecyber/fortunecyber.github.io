@@ -795,6 +795,18 @@ img {
   color: var(--color-muted);
 }
 
+/* CONTACT CTA */
+.contact-cta {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.contact-cta__content {
+  max-width: 500px;
+}
+
 /* FOOTER */
 
 .footer {
@@ -1025,6 +1037,11 @@ img {
 
   .services-grid,
   .insights-grid,
+  .contact-cta {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
   .features-grid,
   .testimonials-grid {
     grid-template-columns: minmax(0, 1fr);
